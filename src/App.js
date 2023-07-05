@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+import logo from './images/chillipepper.jpg';
 import './App.css';
 import Business from './Business.js';
+import './Business.css'
 
 
 function App() {
@@ -8,10 +9,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Business />
+        <div className="businessComponent">
+          <Business className="business" />
+          <Business className="business" />
+
+        </div>
 
         <a
           className="App-link"

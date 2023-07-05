@@ -4,8 +4,8 @@ import './Business.css';
 
 const business = {
     image: tofu,
-    name: 'business',
-    address: 'address',
+    name: 'Soy-Lentil Greens',
+    address: '123 Main Street',
     city: 'city',
     state: 'state',
     zipcode: 'zip',
@@ -19,10 +19,17 @@ function Business() {
 
     return (
         <>
-            <h1>I'm a business component!</h1>
-            <p>{business.name}</p>
-            <p>{business.reviewCount}</p>
-            <img src={business.image} alt="fancy tofu" class="image"></img>
+            <div class="card" style={{ width: 180 }}>
+                <img src={business.image} class="card-img-top" alt="fancy tofu"></img>
+                <div class="card-body">
+                    <h6 class="card-title">
+                        {business.name}
+                    </h6>
+                    <p class="card-text">The place for soy, lentils, and greens. Bring your friends - it's the future of food!</p>
+                    <a href="#" class="btn btn-success">Go to restaurant website!</a>
+                </div>
+            </div>
+
 
         </>)
 }

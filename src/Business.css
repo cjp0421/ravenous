@@ -1,3 +1,23 @@
 .image {
    width: 25%; 
 }
+
+p {
+   font-size: small;
+}
+
+a {
+   font-size: x-small;
+}
+
+.btn {
+   font-size: x-small;
+}
+
+.businessComponent {
+   display:flex;
+}
+
+.card {
+   display: flex;
+}
