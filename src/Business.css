@@ -4,6 +4,8 @@
 
 p {
    font-size: small;
+   margin: 1px;
+   padding: 0px;
 }
 
 a {
@@ -21,3 +23,12 @@ a {
 .card {
    display: flex;
 }
+
+.businessInfo {
+   display: inline-flex;
+   margin: 0px;
+   padding:2px;
+   width:35%;
+   font-size: x-small;
+}
+
