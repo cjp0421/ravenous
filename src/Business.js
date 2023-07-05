@@ -1,7 +1,9 @@
 import React from "react";
+import tofu from "./images/tofu.jpg"
+import './Business.css';
 
 const business = {
-    image: 'image',
+    image: tofu,
     name: 'business',
     address: 'address',
     city: 'city',
@@ -20,6 +22,8 @@ function Business() {
             <h1>I'm a business component!</h1>
             <p>{business.name}</p>
             <p>{business.reviewCount}</p>
+            <img src={business.image} alt="fancy tofu" class="image"></img>
+
         </>)
 }
 
