@@ -1,5 +1,10 @@
+div {
+   padding: 0;
+   margin:0;
+}
+
 .image {
-   width: 25%; 
+   width: 170px; 
 }
 
 p {
@@ -22,6 +27,7 @@ a {
 
 .card {
    display: flex;
+   
 }
 
 .businessInfo {

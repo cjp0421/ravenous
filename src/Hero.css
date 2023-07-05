@@ -1,0 +1,14 @@
+.heroImage {
+    background-color: seagreen;
+    background-size:100vw;
+    position:relative;
+    z-index: -1;
+    height: 20vh;
+    padding:0;
+    margin:0;
+ }
+ 
+ h1 {
+    position:relative;
+    color: whitesmoke;
+}

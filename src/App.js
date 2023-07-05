@@ -3,14 +3,15 @@ import './App.css';
 import Business from './Business.js';
 import './Business.css'
 import Navbar from './Navbar';
+import Hero from './Hero';
 
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Hero />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <div className="businessComponent">
           <Business className="business" />
           <Business className="business" />
