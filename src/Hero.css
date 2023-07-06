@@ -6,9 +6,19 @@
     height: 20vh;
     padding:0;
     margin:0;
- }
+    background-image: url(https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: contain;
+}
  
  h1 {
     position:relative;
     color: whitesmoke;
+    font-size: 120px;
+    font-weight: 900;
+    font-variant:small-caps;
+    font-family: 'Martian Mono', monospace;
+    text-shadow: -1px 1px 2px #000,
+    1px 1px 2px #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
