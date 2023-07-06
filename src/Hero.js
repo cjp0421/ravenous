@@ -1,5 +1,6 @@
 import React from "react";
 import './Hero.css';
+import SearchBar from "./SearchBar";
 
 
 export default function Hero() {
@@ -16,13 +17,7 @@ export default function Hero() {
 
                 </div>
 
-                <div className="searchBar">
-                    <form class="d-flex">
-                        <input type="search" placeholder="Search City" aria-label="Search" />
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
-
-                </div>
+                <SearchBar />
 
             </div>
         </>
