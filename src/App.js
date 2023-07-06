@@ -15,6 +15,8 @@ function App() {
         <div className="businessComponent">
           <Business className="business" />
           <Business className="business" />
+          <Business className="business" />
+
 
         </div>
 
