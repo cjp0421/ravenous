@@ -10,9 +10,9 @@ export default function Hero() {
 
                 <h1>ravenous</h1>
                 <div className="searchBar">
-                    <form class="d-flex">
+                    <form className="d-flex">
                         <input type="search" placeholder="Search Keyword" aria-label="Search" />
-                        <button class="btn btn-success" type="submit">Search</button>
+                        <button className="btn btn-success" type="submit">Search</button>
                     </form>
 
                 </div>

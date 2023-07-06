@@ -20,29 +20,29 @@ function Business() {
     return (
         <>
             <div class="card" style={{ width: 200, margin: 10 }}>
-                <img src={business.image} class="card-img-top" alt="fancy tofu"></img>
+                <img src={business.image} className="card-img-top" alt="fancy tofu"></img>
                 <div class="card-body">
-                    <h6 class="card-title">
+                    <h6 className="card-title">
                         {business.name}
                     </h6>
                     <p class="card-text">The place for soy, lentils, and greens. Bring your friends - it's the future of food!</p>
                     <div>
                         <div class="">
-                            <p class="businessInfo">Address: </p>
-                            <p class="businessInfo">{business.address}</p>
-                            <p class="businessInfo">City: </p>
-                            <p class="businessInfo">{business.city}</p>
-                            <p class="businessInfo">State: </p>
-                            <p class="businessInfo">{business.state}</p>
-                            <p class="businessInfo">Zipcode: </p>
-                            <p class="businessInfo">{business.zipcode}</p>
-                            <p class="businessInfo">Category: </p>
-                            <p class="businessInfo">{business.category}</p>
-                            <p class="businessInfo">Rating: </p>
-                            <p class="businessInfo">{business.rating}</p>
+                            <p className="businessInfo">Address: </p>
+                            <p className="businessInfo">{business.address}</p>
+                            <p className="businessInfo">City: </p>
+                            <p className="businessInfo">{business.city}</p>
+                            <p className="businessInfo">State: </p>
+                            <p className="businessInfo">{business.state}</p>
+                            <p className="businessInfo">Zipcode: </p>
+                            <p className="businessInfo">{business.zipcode}</p>
+                            <p className="businessInfo">Category: </p>
+                            <p className="businessInfo">{business.category}</p>
+                            <p className="businessInfo">Rating: </p>
+                            <p className="businessInfo">{business.rating}</p>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-success">Go to restaurant website!</a>
+                    <a href="#" className="btn btn-success">Go to restaurant website!</a>
                 </div>
             </div>
 
