@@ -20,11 +20,11 @@ function App() {
 
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/cjp0421/ravenous"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          GitHub Code
         </a>
       </header>
     </div>
