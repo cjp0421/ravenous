@@ -8,6 +8,7 @@
     margin:0;
     background-image: url(https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-size: contain;
+ 
 }
  
  h1 {
@@ -24,6 +25,12 @@
 }
 
 .searchBar {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
+    z-index: 2;
 }
+
+input, button {
+    margin: 5px;
+}
+

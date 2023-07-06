@@ -16,6 +16,14 @@ export default function Hero() {
 
                 </div>
 
+                <div className="searchBar">
+                    <form class="d-flex">
+                        <input type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+
+                </div>
+
             </div>
         </>
     )
