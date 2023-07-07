@@ -1,13 +1,23 @@
 import React, { useState } from "react";
+import Button from 'react-bootstrap/Button';
 
 export default function SearchBar() {
+
+    const [message, setMessage] = useState();
+
+    const handleChange = event => {
+        setMessage(event.target.value);
+    };
+
+    console.log(message);
+
 
     return (
         <>
             <div className="searchBar">
-                <form className="d-flex">
-                    <input type="search" placeholder="Search City" aria-label="Search" />
-                    <button className="btn btn-success" type="submit">Search</button>
+                <form >
+                    <input type="text" onChange={handleChange}></input>
+                    <Button variant="light" value="submit">Search</Button>
                 </form>
 
             </div>
