@@ -29,17 +29,13 @@ function Business() {
                     <div>
                         <div class="">
                             <p className="businessInfo">Address: </p>
-                            <p className="businessInfo">{business.address}</p>
-                            <p className="businessInfo">City: </p>
-                            <p className="businessInfo">{business.city}</p>
-                            <p className="businessInfo">State: </p>
-                            <p className="businessInfo">{business.state}</p>
-                            <p className="businessInfo">Zipcode: </p>
-                            <p className="businessInfo">{business.zipcode}</p>
-                            <p className="businessInfo">Category: </p>
-                            <p className="businessInfo">{business.category}</p>
-                            <p className="businessInfo">Rating: </p>
-                            <p className="businessInfo">{business.rating}</p>
+                            <p className="businessInfo">{business.address}<br /> {business.city}, {business.state} {business.zipcode}</p>
+                            <div className="d-flex" className="categoryAndRatingInfo">
+                                <p className="businessInfo">Category: <br />{business.category}</p>
+
+                                <p className="businessInfo">Rating: <br />{business.rating}</p>
+
+                            </div>
                         </div>
                     </div>
                     <a href="#" className="btn btn-success">Go to restaurant website!</a>
