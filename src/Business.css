@@ -23,11 +23,13 @@ a {
 
 .businessComponent {
    display:flex;
+   flex-wrap: wrap;
+   padding: 8%;
+   justify-content: center;
 }
 
 .card {
-   display: flex;
-   
+   display: flex;  
 }
 
 .businessInfo {
@@ -36,6 +38,7 @@ a {
    padding:2px;
    width:40%;
    font-size: x-small;
+   justify-content: center;
 }
 
 

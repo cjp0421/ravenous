@@ -8,6 +8,9 @@ export default function BusinessList() {
             <Business className="business" />
             <Business className="business" />
             <Business className="business" />
+            <Business className="business" />
+            <Business className="business" />
+            <Business className="business" />
 
 
         </div>
