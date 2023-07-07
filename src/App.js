@@ -1,6 +1,5 @@
 
 import './App.css';
-
 import './Business.css'
 import Navbar from './Navbar';
 import Hero from './Hero';
@@ -16,6 +15,7 @@ function App() {
       <header className="App-header">
 
         <BusinessList />
+
         <a
           className="App-link"
           href="https://github.com/cjp0421/ravenous"
