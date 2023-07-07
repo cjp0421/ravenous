@@ -32,7 +32,7 @@ function Business() {
                             <p className="businessInfo">{business.address}<br /> {business.city}, {business.state} {business.zipcode}</p>
                             <div className="d-flex" className="categoryAndRatingInfo">
                                 <p className="businessInfo">Category: <br />{business.category}</p>
-
+                                <p className="d-inline-flex">|</p>
                                 <p className="businessInfo">Rating: <br />{business.rating}</p>
 
                             </div>
