@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
+import styles from './Business.css'
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -33,6 +34,9 @@ export default function SearchBar() {
                     <input type="text" onChange={handleChange}></input>
                     <Button variant="light" value="submit">Search</Button>
                 </form>
+                <div>
+                    <ul>{renderSortByOptions()}</ul>
+                </div>
 
             </div>
         </>

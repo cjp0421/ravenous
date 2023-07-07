@@ -41,4 +41,9 @@ a {
    justify-content: center;
 }
 
+ul {
+   color: white;
+   list-style: none;
+   font-weight: 900;
+}
 
