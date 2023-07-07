@@ -33,3 +33,14 @@ button {
     margin: 5px;
 }
 
+@media (min-width: 380px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media  (min-width: 800px) {
+    h1 {
+        font-size: 120px;
+    }
+}
