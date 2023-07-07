@@ -45,5 +45,14 @@ ul {
    color: white;
    list-style: none;
    font-weight: 900;
+   display: inline-flex;
 }
 
+li {
+   margin: 10px auto;
+   padding: 15px;
+}
+
+input {
+   margin: 15px;
+}

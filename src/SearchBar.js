@@ -31,7 +31,8 @@ export default function SearchBar() {
         <>
             <div className="searchBar">
                 <form >
-                    <input type="text" onChange={handleChange}></input>
+                    <input type="text" onChange={handleChange} placeholder="Search Businesses"></input>
+                    <input type="text" onChange={handleChange} placeholder="Search Places"></input>
                     <Button variant="light" value="submit">Search</Button>
                 </form>
                 <div>
