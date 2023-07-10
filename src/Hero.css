@@ -39,10 +39,17 @@ button {
     h1 {
         font-size: 80px;
     }
+    .heroImage {
+        height: 30vh;
+    }
 }
 
 @media  (min-width: 800px) {
     h1 {
         font-size: 120px;
+    }
+
+    .heroImage {
+        height: 40vh;
     }
 }
