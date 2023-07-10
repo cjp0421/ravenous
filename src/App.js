@@ -7,9 +7,13 @@ import React from 'react';
 import BusinessList from './BusinessList';
 
 
+
 function App() {
   return (
     <div className="App">
+
+
+
       <Navbar />
       <Hero />
       <header className="App-header">
