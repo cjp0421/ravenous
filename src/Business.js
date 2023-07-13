@@ -3,7 +3,10 @@ import tofu from "./images/tofu.jpg"
 import './Business.css';
 
 const business = {
-    image: tofu,
+    image: {
+        imageUrl: tofu,
+        imageAlt: "fancy tofu"
+    },
     name: 'Soy-Lentil Greens',
     address: '123 Main Street',
     city: 'St. Chuck',
@@ -11,7 +14,8 @@ const business = {
     zipcode: '123456',
     category: 'Vegan Fusion',
     rating: 4.9,
-    reviewCount: 16
+    reviewCount: 16,
+    description: 'The place for soy, lentils, and greens. Bring your friends - it\'s the future of food!'
 };
 
 function Business() {
@@ -20,12 +24,12 @@ function Business() {
     return (
         <>
             <div class="card" style={{ width: 200, margin: 10 }}>
-                <img src={business.image} className="card-img-top" alt="fancy tofu"></img>
+                <img src={business.image.imageUrl} className="card-img-top" alt={business.image.alt}></img>
                 <div class="card-body">
                     <h6 className="card-title">
                         {business.name}
                     </h6>
-                    <p class="card-text">The place for soy, lentils, and greens. Bring your friends - it's the future of food!</p>
+                    <p class="card-text">{business.description}</p>
                     <div>
                         <div class="">
                             <p className="businessInfo">Address: </p>
