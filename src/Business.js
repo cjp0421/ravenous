@@ -25,7 +25,7 @@ function Business() {
         <>
             <div class="card" style={{ width: 200, margin: 10 }}>
                 <img src={business.image.imageUrl} className="card-img-top" alt={business.image.alt}></img>
-                <div class="card-body">
+                <div className="card-body">
                     <h6 className="card-title">
                         {business.name}
                     </h6>
