@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ravenous/static/css/main.c0cb9d29.css",
+    "main.js": "/ravenous/static/js/main.ea76e602.js",
+    "static/js/787.d43d5300.chunk.js": "/ravenous/static/js/787.d43d5300.chunk.js",
+    "static/media/tofu.jpg": "/ravenous/static/media/tofu.ad3575cd017938953b0e.jpg",
+    "index.html": "/ravenous/index.html",
+    "main.c0cb9d29.css.map": "/ravenous/static/css/main.c0cb9d29.css.map",
+    "main.ea76e602.js.map": "/ravenous/static/js/main.ea76e602.js.map",
+    "787.d43d5300.chunk.js.map": "/ravenous/static/js/787.d43d5300.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0cb9d29.css",
+    "static/js/main.ea76e602.js"
+  ]
+}
