@@ -1,10 +1,11 @@
-
-import './App.css';
-import './Business.css'
-import Navbar from './Navbar';
-import Hero from './Hero';
 import React from 'react';
-import BusinessList from './BusinessList';
+
+import './App.module.css'
+import '../../Business.css'
+import Navbar from '../../Navbar';
+import Hero from '../../Hero'
+
+import BusinessList from '../../BusinessList';
 
 
 

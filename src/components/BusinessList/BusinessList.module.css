@@ -1,0 +1,58 @@
+div {
+   padding: 0;
+   margin:0;
+}
+
+.image {
+   width: 170px; 
+}
+
+p {
+   font-size: small;
+   margin: 1px;
+   padding: 0px;
+}
+
+a {
+   font-size: x-small;
+}
+
+.btn {
+   font-size: x-small;
+}
+
+.businessComponent {
+   display:flex;
+   flex-wrap: wrap;
+   padding: 8%;
+   justify-content: center;
+}
+
+.card {
+   display: flex;  
+}
+
+.businessInfo {
+   display: inline-flex;
+   margin: 0px;
+   padding:2px;
+   width:40%;
+   font-size: x-small;
+   justify-content: center;
+}
+
+ul {
+   color: white;
+   list-style: none;
+   font-weight: 900;
+   display: inline-flex;
+}
+
+li {
+   margin: 10px auto;
+   padding: 15px;
+}
+
+input {
+   margin: 15px;
+}

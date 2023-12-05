@@ -1,8 +1,10 @@
 import React from "react";
 import tofu from "./images/tofu.jpg"
+import cuttingBoard from "./images/foodbanner.jpg"
+
 import './Business.css';
 
-const business = {
+const businesses = [{
     image: {
         imageUrl: tofu,
         imageAlt: "fancy tofu"
@@ -16,7 +18,22 @@ const business = {
     rating: 4.9,
     reviewCount: 16,
     description: 'The place for soy, lentils, and greens. Bring your friends - it\'s the future of food!'
-};
+},
+{
+    image: {
+        imageUrl: cuttingBoard,
+        imageAlt: "discount tofu"
+    },
+    name: 'CopyKelp Greens',
+    address: '125 Main Street',
+    city: 'St. Chuck',
+    state: 'MO',
+    zipcode: '123456',
+    category: 'Vegan Fusion',
+    rating: 3.9,
+    reviewCount: 6,
+    description: 'The CHEAPER place for soy, lentils, and greens. Bring your friends - it\'s the future of food!'
+}];
 
 function Business() {
 
@@ -24,20 +41,20 @@ function Business() {
     return (
         <>
             <div class="card" style={{ width: 200, margin: 10 }}>
-                <img src={business.image.imageUrl} className="card-img-top" alt={business.image.alt}></img>
+                <img src={businesses[0].image.imageUrl} className="card-img-top" alt={businesses[0].image.alt}></img>
                 <div className="card-body">
                     <h6 className="card-title">
-                        {business.name}
+                        {businesses[0].name}
                     </h6>
-                    <p class="card-text">{business.description}</p>
+                    <p class="card-text">{businesses[0].description}</p>
                     <div>
                         <div class="">
                             <p className="businessInfo">Address: </p>
-                            <p className="businessInfo">{business.address}<br /> {business.city}, {business.state} {business.zipcode}</p>
+                            <p className="businessInfo">{businesses[0].address}<br /> {businesses[0].city}, {businesses[0].state} {businesses[0].zipcode}</p>
                             <div className="d-flex" className="categoryAndRatingInfo">
-                                <p className="businessInfo">Category: <br />{business.category}</p>
+                                <p className="businessInfo">Category: <br />{businesses[0].category}</p>
                                 <p className="d-inline-flex">|</p>
-                                <p className="businessInfo">Rating: <br />{business.rating}</p>
+                                <p className="businessInfo">Rating: <br />{businesses[0].rating}</p>
 
                             </div>
                         </div>
