@@ -6,7 +6,7 @@ import SearchBar from "../SearchBar/SearchBar";
 export default function Hero() {
     return (
         <>
-            <div class="text-center" class="heroImage">
+            <div className="hero">
 
                 <h1>ravenous</h1>
                 <div className="searchBar">

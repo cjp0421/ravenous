@@ -1,6 +1,7 @@
 div {
    padding: 0;
    margin:0;
+   
 }
 
 .image {
@@ -19,6 +20,11 @@ a {
 
 .btn {
    font-size: x-small;
+}
+
+.businessBackground {
+   background-color: rgba(0, 128, 0, 0.527);
+   padding: 2%;
 }
 
 .businessComponent {

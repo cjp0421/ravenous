@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.module.css'
 import '../Business/Business.css'
+import '../BusinessList/BusinessList.module.css'
 import Navbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero'
 
