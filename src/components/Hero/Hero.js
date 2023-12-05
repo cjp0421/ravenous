@@ -1,6 +1,6 @@
 import React from "react";
 import './Hero.css';
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar/SearchBar";
 
 
 export default function Hero() {

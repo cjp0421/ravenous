@@ -1,6 +1,6 @@
 import React from "react";
-import tofu from "./images/tofu.jpg"
-import cuttingBoard from "./images/foodbanner.jpg"
+import tofu from "../../images/tofu.jpg"
+import cuttingBoard from "../../images/foodbanner.jpg"
 
 import './Business.css';
 

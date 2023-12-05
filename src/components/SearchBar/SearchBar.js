@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
-import './Business.css'
+import '../Business/Business.css'
 
 const sortByOptions = {
     "Best Match": "best_match",
