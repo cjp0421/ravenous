@@ -8,7 +8,8 @@ const sortByOptions = {
     "Most Reviewed": "review_count",
 };
 
-export default function SearchBar() {
+export default function SearchBar({ searchYelp }) {
+    const [message, setMessage] = useState();
 
     const renderSortByOptions = () => {
         return Object.keys(sortByOptions).map((sortByOption) => {
@@ -18,7 +19,7 @@ export default function SearchBar() {
     };
 
 
-    const [message, setMessage] = useState();
+
 
     const handleChange = event => {
         setMessage(event.target.value);
