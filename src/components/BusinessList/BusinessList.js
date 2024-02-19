@@ -7,13 +7,6 @@ export default function BusinessList() {
     return (
         <div className="businessComponent">
             <Business className="business" />
-            <Business className="business" />
-            <Business className="business" />
-            <Business className="business" />
-            <Business className="business" />
-            <Business className="business" />
-
-
         </div>
     )
 }
