@@ -1,5 +1,6 @@
 # Helpful Resources for Learning
 https://www.youtube.com/watch?v=gSH_PLX1OSA
+https://blog.logrocket.com/deploying-react-apps-github-pages/
 
 ## Available Scripts
 
