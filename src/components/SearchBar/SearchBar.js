@@ -10,7 +10,7 @@ const sortByOptions = {
 };
 
 export default function SearchBar({ searchYelp }) {
-    const [message, setMessage] = useState();
+    // const [message, setMessage] = useState();
     const [term, setTerm] = useState("");
     const [location, setLocation] = useState("");
     const [sortBy, setSortBy] = useState("best_match");

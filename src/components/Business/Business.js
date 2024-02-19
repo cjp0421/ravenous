@@ -11,7 +11,7 @@ function Business() {
                     <h6 className="card-title">
                         {business.name}
                     </h6>
-                    <p className="card-text">{businesses[0].description}</p>
+                    <p className="card-text">{business.description}</p>
                     <div>
                         <div className="">
                             <p className="businessInfo">Address: </p>

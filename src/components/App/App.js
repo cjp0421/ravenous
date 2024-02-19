@@ -11,12 +11,11 @@ import BusinessList from '../BusinessList/BusinessList';
 
 
 function App() {
+
+
   return (
     <div className="App">
-
-
-
-      <Navbar />
+      <div style={{ position: 'fixed', width: '100%', zIndex: '1' }}><Navbar /></div>
       <Hero />
       <header className="App-header">
 
