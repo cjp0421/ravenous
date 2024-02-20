@@ -10,7 +10,6 @@ const sortByOptions = {
 };
 
 export default function SearchBar({ searchYelp }) {
-    // const [message, setMessage] = useState();
     const [term, setTerm] = useState("");
     const [location, setLocation] = useState("");
     const [sortBy, setSortBy] = useState("best_match");
@@ -47,7 +46,7 @@ export default function SearchBar({ searchYelp }) {
                     className={getSortByClass(sortByOptionValue)}
                     key={sortByOptionValue}
                     onClick={() => {
-                        handleSortByChange(sortByOptionValue)
+                        handleSortByChange(sortByOptions[sortByOptionValue])
                     }}
                 >
                     {sortByOption}
@@ -55,16 +54,6 @@ export default function SearchBar({ searchYelp }) {
             );
         });
     };
-
-
-
-
-    // const handleChange = event => {
-    //     setMessage(event.target.value);
-    // };
-
-    // console.log(message);
-
 
     return (
         <>

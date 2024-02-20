@@ -1,4 +1,8 @@
 # Helpful Resources for Learning
+https://dev.to/kyle12jung/how-to-use-yelp-fusion-library-on-react-and-express-cors-policy-2igb
+https://spectralops.io/blog/yelp-api-guide/
+
+
 https://docs.developer.yelp.com/reference/v3_business_search
 https://docs.developer.yelp.com/docs/fusion-intro
 https://www.youtube.com/watch?v=gSH_PLX1OSA

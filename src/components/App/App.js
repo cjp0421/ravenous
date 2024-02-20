@@ -15,12 +15,14 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ position: 'fixed', width: '100%', zIndex: '1' }}><Navbar /></div>
-      <Hero />
       <header className="App-header">
-
+        <div style={{ position: 'fixed', width: '100%', zIndex: '1' }}><Navbar /></div>
+        <Hero />
+      </header>
+      <main>
         <BusinessList />
-
+      </main>
+      <footer>
         <a
           className="App-link"
           href="https://github.com/cjp0421/ravenous"
@@ -29,7 +31,7 @@ function App() {
         >
           GitHub Code
         </a>
-      </header>
+      </footer>
     </div>
   );
 }

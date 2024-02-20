@@ -1,10 +1,9 @@
-import React from "react";
-import businesses from "../../data/fakeData";
+
 import './Business.css';
 
-function Business() {
+function Business({ businesses }) {
     const businessCards = businesses.map((business) => {
-        return <div className="businessBackground">
+        return <div className="businessBackground" key={business.id}>
             <div className="card" style={{ width: 200, margin: 10 }}>
                 <img src={business.image.imageUrl} className="card-img-top" alt={business.image.alt}></img>
                 <div className="card-body">
