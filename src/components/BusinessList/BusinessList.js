@@ -4,12 +4,17 @@ import Business from "../Business/Business";
 import useYelpApi from '../../utils/useYelpApi';
 import "../Business/Business.css"
 
+
+
+
 export default function BusinessList() {
     const { response, error, loading } = useYelpApi({
         term: '',
-        location: '',
-        sortBy: 'best_match'
+        location: 'Saint Louis',
+        sortBy: '',
+        limit: 5,
     })
+
     if (loading) {
         return <h2>Loading...</h2>
     }
@@ -20,7 +25,7 @@ export default function BusinessList() {
 
     return (
         <div className="businessComponent">
-            <Business className="business" businesses={response.businesses || []} />
+            <Business className="business" businesses={response && response.businesses ? response.businesses : []} />
         </div>
-    )
+    );
 }

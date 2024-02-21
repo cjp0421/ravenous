@@ -12,6 +12,11 @@ https://chaoyue-zhao.medium.com/how-to-make-axios-api-calls-with-yelp-fusion-ins
 https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/
 https://www.freecodecamp.org/news/how-to-use-axios-with-react/
 https://dev.to/hey_yogini/useaxios-a-simple-custom-hook-for-calling-apis-using-axios-2dkj
+[ReactJS Environment Variables: A Developer’s Guide](https://appwrk.com/reactjs-environment-variables)
+https://dev.to/hey_yogini/useaxios-a-simple-custom-hook-for-calling-apis-using-axios-2dkj
+[How To Use Axios With React: The Definitive Guide (2021)](https://www.freecodecamp.org/news/how-to-use-axios-with-react/#how-to-set-up-axios-with-react)
+[Creating a custom Hook to make requests using React + Axios + TypeScript](https://danilorivera95.medium.com/creating-a-custom-hook-to-make-requests-using-react-axios-typescript-ca591c6c25fc)
+
 ## Available Scripts
 
 In the project directory, you can run:

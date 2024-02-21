@@ -1,7 +1,5 @@
-import { useState } from "react";
 import './Hero.css';
 import SearchBar from "../SearchBar/SearchBar";
-import useYelpApi from "../../utils/useYelpApi";
 
 
 export default function Hero() {
