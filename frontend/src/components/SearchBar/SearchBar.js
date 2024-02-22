@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import '../Business/Business.css';
 import styles from './styles.css';
+import useYelpApi from "../../utils/useYelpApi";
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -9,10 +10,13 @@ const sortByOptions = {
     "Most Reviewed": "review_count",
 };
 
-export default function SearchBar({ searchYelp }) {
-    const [term, setTerm] = useState("");
-    const [location, setLocation] = useState("");
-    const [sortBy, setSortBy] = useState("best_match");
+export default function SearchBar({ term, location, sortBy, setTerm, setLocation, setSortBy, searchYelp }) {
+
+    const handleSearch = (event) => {
+        event.preventDefault();
+        // Call the searchYelp function when the Search Bar button is clicked
+        searchYelp();
+    };
 
     const getSortByClass = (sortByOption) => {
         if (sortBy === sortByOption) {
@@ -32,11 +36,6 @@ export default function SearchBar({ searchYelp }) {
     const handleLocationChange = (event) => {
         setLocation(event.target.value);
     };
-
-    const handleSearch = (event) => {
-        event.preventDefault();
-        searchYelp(term, location, sortBy);
-    }
 
     const renderSortByOptions = () => {
         return Object.keys(sortByOptions).map((sortByOption) => {

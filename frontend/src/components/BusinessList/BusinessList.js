@@ -7,13 +7,7 @@ import "../Business/Business.css"
 
 
 
-export default function BusinessList() {
-    const { response, error, loading } = useYelpApi({
-        term: '',
-        location: 'Saint Louis',
-        sortBy: '',
-        limit: 5,
-    })
+export default function BusinessList({ response, error, loading }) {
 
     if (loading) {
         return <h2>Loading...</h2>
