@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import '../Business/Business.css';
 import styles from './styles.css';
-// import useYelpApi from "../../utils/useYelpApi";
+import useYelpApi from "../../utils/useYelpApi";
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -10,13 +10,11 @@ const sortByOptions = {
     "Most Reviewed": "review_count",
 };
 
-export default function SearchBar({ term, location, sortBy, setTerm, setLocation, setSortBy, searchYelp }) {
+export default function SearchBar({ sortBy, setSortBy, location, setLocation, term, setTerm }) {
 
-    const handleSearch = (event) => {
-        event.preventDefault();
-        // Call the searchYelp function when the Search Bar button is clicked
-        searchYelp();
-    };
+    // In SearchBar.js or any other component
+    const { data, isLoading, error, fetchData } = useYelpApi({ term: 'yourTermValue', location: 'yourLocationValue' });
+
 
     const getSortByClass = (sortByOption) => {
         if (sortBy === sortByOption) {
@@ -60,7 +58,7 @@ export default function SearchBar({ term, location, sortBy, setTerm, setLocation
                 <div className={styles.SearchBarSortOptions}>
                     <ul>{renderSortByOptions()}</ul>
                 </div>
-                <form onSubmit={handleSearch}>
+                <form onSubmit={fetchData}>
                     <div className={styles.SearchBarFields}>
                         <input type="text" onChange={handleTermChange} placeholder="Search Businesses"></input>
                         <input type="text" onChange={handleLocationChange} placeholder="Search Places"></input>

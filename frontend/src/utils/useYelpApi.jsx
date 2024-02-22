@@ -1,64 +1,52 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
+// import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+// import { useState, useEffect } from 'react';
 
-axios.defaults.baseURL = 'http://localhost:3001';
 
-const useYelpApi = ({ term, location, sortBy, headers = { Authorization: `Bearer ${process.env.REACT_APP_YELP_API_KEY}` } }) => {
-    const [response, setResponse] = useState(null);
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        let ignore = false
+// const useYelpApi = ({ term, location }) => {
 
-        const fetchData = async () => {
+//     const [data, setData] = useState(null);
+//     const [isLoading, setIsLoading] = useState(false);
+//     const [error, setError] = useState(null);
+//     useEffect(() => {
+//         let ignore = false;
+//         const fetchData = async () => {
+//             setIsLoading(true);
 
-            setLoading(true)
-            const url = '/api';
+//             try {
+//                 const response = await axios.get(`/search`, {  // Changed the URL to a relative path
+//                     baseURL: 'http://localhost:3001',  // Set the baseURL to the proxy server
+//                     params: {
+//                         term: term,
+//                         location: location,
+//                     },
 
-            try {
-                if (ignore === false) {
-                    console.log('useYelpApi - Fetching data...');
-                    const response = await axios({
-                        method: 'GET',
-                        url: url,
-                        params: {
-                            location: location || "Saint Louis",  // Use provided location or default to "Saint Louis"
-                            term: term || "food",  // Use provided term or default to "food"
-                            sort_by: sortBy || 'best_match',
-                        },
-                        headers: {
-                            ...headers,
-                            'Content-Type': 'application/json',
-                            'Authorization': `Bearer ${process.env.REACT_APP_YELP_API_KEY}`,
+//                 });
+//                 if (ignore === false) {
+//                     setData(response.data)
+//                     setError(null);
+//                     setIsLoading(false)
+//                 }
+//             } catch (error) {
+//                 if (ignore === false) {
+//                     setData(null)
+//                     setError(error)
+//                     setIsLoading(false)
+//                 }
 
-                        },
-                    })
-                    console.log('working!')
+//             }
+//             setIsLoading(false)
+//         }
 
-                    setResponse(response.data);
-                }
-            } catch (error) {
-                if (ignore === false) {
-                    console.log('useYelpApi - Setting loading to false...');
-                    setLoading(false);
-                    console.error('useYelpApi - Error:', error);
-                    setError(error)
-                }
 
-            } finally {
-                setLoading(false)
-            }
-        };
-        fetchData();
+//         fetchData();
+//         return () => {
+//             ignore = true;
+//         }
+//     }, [location, term]);
 
-        return () => {
-            ignore = true
-        }
+//     return { data, isLoading, error }
 
-    }, [term, location, sortBy, headers]);
+// };
 
-    return { response, error, loading };
-};
-
-export default useYelpApi;
+// export default useYelpApi;
