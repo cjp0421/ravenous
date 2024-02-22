@@ -1,7 +1,7 @@
 import './BusinessList.module.css';
 import Business from "../Business/Business";
 // import businesses from "../../data/fakeData";
-import useYelpApi from '../../utils/useYelpApi';
+// import useYelpApi from '../../utils/useYelpApi';
 import "../Business/Business.css"
 
 

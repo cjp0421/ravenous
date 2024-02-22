@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import '../Business/Business.css';
 import styles from './styles.css';
-import useYelpApi from "../../utils/useYelpApi";
+// import useYelpApi from "../../utils/useYelpApi";
 
 const sortByOptions = {
     "Best Match": "best_match",
