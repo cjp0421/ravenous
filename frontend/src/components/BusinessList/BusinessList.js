@@ -7,7 +7,7 @@ import "../Business/Business.css"
 
 
 
-export default function BusinessList({ response, error, loading }) {
+export default function BusinessList({ businesses, error, loading }) {
 
     if (loading) {
         return <h2>Loading...</h2>
@@ -19,7 +19,7 @@ export default function BusinessList({ response, error, loading }) {
 
     return (
         <div className="businessComponent">
-            <Business className="business" businesses={response && response.businesses ? response.businesses : []} />
+            <Business className="business" businesses={businesses && businesses ? businesses : []} />
         </div>
     );
 }

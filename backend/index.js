@@ -23,16 +23,16 @@ const yelpApiUrl = 'https://api.yelp.com/v3/businesses/search';
 
 app.get('/search', async (req, res) => {
     try {
-        const searchTerm = req.query.term || 'food'; // Default term is 'food', you can change it based on your requirements
-        const location = req.query.location || 'Los Angeles'; // Default location is 'Los Angeles', you can change it based on your requirements
+        const searchTerm = req.query.term || 'food';
+        const location = req.query.location || 'Los Angeles';
 
         const response = await axios.get(yelpApiUrl, {
             headers: {
                 Authorization: `Bearer ${apiKey}`,
             },
             params: {
-                location: location || "saint charles",
-                term: searchTerm || "soup",
+                location: location,
+                term: searchTerm,
 
             },
         });
