@@ -14,6 +14,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [businesses, setBusinesses] = useState([]);
   const [error, setError] = useState(null);
+  const [searchParams, setSearchParams] = useState({ location: "Saint Louis", term: "Soup" });
 
   const searchYelp = async (location, term) => {
     setIsLoading(true);
@@ -31,15 +32,15 @@ function App() {
   };
 
   useEffect(() => {
-    searchYelp("US", "Food");
-  }, []);
-
+    const { location, term } = searchParams;
+    searchYelp(location, term);
+  }, [searchParams]);
 
   return (
     <div className="App">
       <header className="App-header">
         <div style={{ position: 'fixed', width: '100%', zIndex: '1' }}><Navbar /></div>
-        <Hero onSearch={searchYelp} />
+        <Hero searchParams={searchParams} setSearchParams={setSearchParams} />
       </header>
       <main>
         <BusinessList businesses={businesses} error={error} loading={isLoading} />

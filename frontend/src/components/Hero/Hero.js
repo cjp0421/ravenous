@@ -2,7 +2,7 @@ import './Hero.css';
 import SearchBar from "../SearchBar/SearchBar";
 
 
-export default function Hero({ onSearch }) {
+export default function Hero({ searchParams, setSearchParams }) {
 
 
     return (
@@ -11,7 +11,7 @@ export default function Hero({ onSearch }) {
 
                 <h1>ravenous</h1>
                 <div className="searchBar">
-                    <SearchBar onSearch={onSearch} />
+                    <SearchBar searchParams={searchParams} setSearchParams={setSearchParams} />
 
                 </div>
 

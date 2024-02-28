@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import '../Business/Business.css';
 import styles from './styles.css';
-// import useYelpApi from "../../utils/useYelpApi";
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -11,12 +10,14 @@ const sortByOptions = {
 };
 
 
-export default function SearchBar({ sortBy, setSortBy, onSearch }) {
-    const [location, setLocation] = useState('');
-    const [term, setTerm] = useState('');
-    const handleSubmit = async (event) => {
+export default function SearchBar({ sortBy, setSortBy, searchParams, setSearchParams }) {
+    const [location, setLocation] = useState(searchParams.location || '');
+    const [term, setTerm] = useState(searchParams.term || '');
+
+    const handleSubmit = (event) => {
         event.preventDefault();
-        await onSearch(location, term)
+        const updatedSearchParams = { term, location };
+        setSearchParams(updatedSearchParams)
     };
 
     const getSortByClass = (sortByOption) => {
@@ -61,11 +62,11 @@ export default function SearchBar({ sortBy, setSortBy, onSearch }) {
                 <div className={styles.SearchBarSortOptions}>
                     <ul>{renderSortByOptions()}</ul>
                 </div>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <div className={styles.SearchBarFields}>
-                        <input type="text" onChange={handleTermChange} placeholder="Search Businesses"></input>
-                        <input type="text" onChange={handleLocationChange} placeholder="Search Places"></input>
-                        <Button variant="light" value="submit">Search</Button>
+                        <input type="text" value={term} onChange={handleTermChange} placeholder="Search Businesses"></input>
+                        <input type="text" value={location} onChange={handleLocationChange} placeholder="Search Places"></input>
+                        <Button onClick={handleSubmit} variant="light" value="submit">Search</Button>
                     </div>
                 </form>
             </div>

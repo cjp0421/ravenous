@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const backendUrl = 'http://localhost:3001';
 
-export async function searchYelpApi(location = 'Saint Louis', term = 'soup') {
+export async function searchYelpApi(location, term) {
     try {
         const response = await axios.get(`${backendUrl}/search`, {
             params: {
@@ -11,7 +11,7 @@ export async function searchYelpApi(location = 'Saint Louis', term = 'soup') {
                 term: term,
             },
         });
-        console.log(response.data.businesses)
+        console.log(response.data)
         const businesses = response.data;
         return { businesses: businesses, error: null };
     } catch (error) {
