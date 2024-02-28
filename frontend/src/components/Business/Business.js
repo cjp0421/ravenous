@@ -4,7 +4,7 @@ import './Business.css';
 function Business({ businesses }) {
     const businessCards = businesses.map((business) => {
         return <div className="businessBackground" key={business.id}>
-            <div className="card" style={{ width: 200, margin: 10 }}>
+            <div className="card" >
                 <img src={business.image_url} className="card-img-top" alt="Restaurant Provided"></img>
                 <div className="card-body">
                     <h6 className="card-title">
