@@ -20,9 +20,7 @@
 
 [Axios in React: A Guide for Beginners](https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/)
 
-[How To Use Axios With React: The Definitive Guide (2021)](https://www.freecodecamp.org/news/how-to-use-axios-with-react/)
-
-## Available Scripts
+## Available Scripts for Frontend Directory
 
 In the project directory, you can run:
 
