@@ -53,7 +53,7 @@ In the project directory, you can run:
 
 ### `npm run startDev`
 
-Runs the app in the development mode.\
+Runs the proxy server in the development mode.\
 Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 You may also see any lint errors in the console.
