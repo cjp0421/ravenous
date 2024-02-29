@@ -47,3 +47,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Available Scripts for Backend Directory
+
+In the project directory, you can run:
+
+### `npm run startDev`
+
+Runs the app in the development mode.\
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+
+You may also see any lint errors in the console.
