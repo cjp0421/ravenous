@@ -12,12 +12,15 @@
 
 [Getting Started with the Yelp Fusion API](https://docs.developer.yelp.com/docs/fusion-intro)
 
-https://www.youtube.com/watch?v=gSH_PLX1OSA
-https://blog.logrocket.com/deploying-react-apps-github-pages/
-https://medium.com/@oadaramola/a-pitfall-i-almost-fell-into-d1d3461b2fb8
-https://chaoyue-zhao.medium.com/how-to-make-axios-api-calls-with-yelp-fusion-inside-react-js-10755d8485c5
-https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/
-https://www.freecodecamp.org/news/how-to-use-axios-with-react/
+[Yelp API Tutorial using Postman | Beginners Guide](https://www.youtube.com/watch?v=gSH_PLX1OSA)
+
+[Deploying React apps to GitHub Pages](https://blog.logrocket.com/deploying-react-apps-github-pages/)
+
+[A Pitfall I Almost Fell Into… Learn how to save your API KEYS](https://medium.com/@oadaramola/a-pitfall-i-almost-fell-into-d1d3461b2fb8)
+
+[Axios in React: A Guide for Beginners](https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/)
+
+[How To Use Axios With React: The Definitive Guide (2021)](https://www.freecodecamp.org/news/how-to-use-axios-with-react/)
 
 ## Available Scripts
 
