@@ -12,7 +12,7 @@ function Business({ businesses }) {
                     </h6>
                     <p className="card-text">{business.description}</p>
                     <div>
-                        <div className="">
+                        <div className="business">
                             <p className="businessInfo">Address: </p>
                             <p className="businessInfo">{business.location.address1}<br /> {business.location.city}, {business.location.state} {business.location.zip_code}</p>
                             <div className="d-flex categoryAndRatingInfo">

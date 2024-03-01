@@ -14,13 +14,13 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [businesses, setBusinesses] = useState([]);
   const [error, setError] = useState(null);
-  const [searchParams, setSearchParams] = useState({ location: "Saint Louis", term: "Soup" });
+  const [searchParams, setSearchParams] = useState({ location: "Saint Louis", term: "Soup", sort_by: "best_match" });
 
-  const searchYelp = async (location, term) => {
+  const searchYelp = async (location, term, sort_by) => {
     setIsLoading(true);
 
     try {
-      const { businesses, error } = await searchYelpApi(location, term);
+      const { businesses, error } = await searchYelpApi(location, term, sort_by);
       setBusinesses(businesses);
       setIsLoading(false)
       setError(error);
@@ -32,8 +32,8 @@ function App() {
   };
 
   useEffect(() => {
-    const { location, term } = searchParams;
-    searchYelp(location, term);
+    const { location, term, sort_by } = searchParams;
+    searchYelp(location, term, sort_by);
   }, [searchParams]);
 
   return (

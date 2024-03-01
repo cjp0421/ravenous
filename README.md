@@ -51,7 +51,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 In the project directory, you can run:
 
-### `npm run startDev`
+### `npm run devStart`
 
 Runs the proxy server in the development mode.\
 Open [http://localhost:3001](http://localhost:3001) to view it in your browser.

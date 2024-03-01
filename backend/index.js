@@ -25,6 +25,7 @@ app.get('/search', async (req, res) => {
     try {
         const searchTerm = req.query.term;
         const location = req.query.location;
+        const sort_by = req.query.sort_by;
 
         const response = await axios.get(yelpApiUrl, {
             headers: {
@@ -33,11 +34,14 @@ app.get('/search', async (req, res) => {
             params: {
                 location: location,
                 term: searchTerm,
-
+                sort_by: sort_by,
             },
         });
 
+        console.log(sort_by)
+
         const businesses = response.data.businesses;
+
         res.json(businesses);
     } catch (error) {
         console.error('Error fetching data from Yelp API', error.response ? error.response.data : error.message);
