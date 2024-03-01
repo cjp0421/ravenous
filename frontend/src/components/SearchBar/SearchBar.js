@@ -5,7 +5,7 @@ import './SearchBar.css';
 export default function SearchBar({ searchParams, setSearchParams }) {
     const [location, setLocation] = useState(searchParams.location || '');
     const [term, setTerm] = useState(searchParams.term || '');
-    const [sort_by, setSort_by] = useState("best_match")
+    const [sort_by, setSort_by] = useState(searchParams.sort_by)
 
     const sort_byOptions = {
         "Best Match": "best_match",
@@ -18,8 +18,8 @@ export default function SearchBar({ searchParams, setSearchParams }) {
 
         setSort_by(sort_byOptionValue)
 
-        const updatedSearchParams = { ...searchParams, sort_by }
-        console.log(sort_byOptionValue)
+        const updatedSearchParams = { ...searchParams, sort_by: sort_byOptionValue }
+        console.log(searchParams)
         setSearchParams(updatedSearchParams)
 
     };
