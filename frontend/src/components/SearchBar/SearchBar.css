@@ -2,10 +2,6 @@ button {
     margin: 5px;
 }
 
-.active {
-    text-decoration: wavy;
-}
-
 .searchBar {
     display: inline-block;
     margin: 0 auto;
@@ -13,6 +9,47 @@ button {
         1px 1px 2px #000,
         1px -1px 0 #000,
         -1px -1px 0 #000;
+}
+
+.sort-option {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sort-option::before,
+.sort-option::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfb51e;
+    text-shadow: -1px 1px 2px #000,
+        1px 1px 2px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-option::before {
+    transform-origin: right;
+}
+
+.sort-option::after {
+    transform-origin: left;
+}
+
+.sort-option:hover::before,
+.sort-option:hover::after,
+.sort-option.active::before,
+.sort-option.active::after {
+    transform: scaleX(1);
+    width: 100%;
 }
 
 @media (min-width: 380px) {}

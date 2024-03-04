@@ -27,7 +27,7 @@ export default function SearchBar({ searchParams, setSearchParams }) {
 
 
     const getsort_byClass = (sort_byOptionValue) => {
-        return sort_by === sort_byOptionValue ? "active" : "";
+        return sort_by === sort_byOptionValue ? "active" : "inactive";
     };
 
 
@@ -45,7 +45,7 @@ export default function SearchBar({ searchParams, setSearchParams }) {
 
             return (
                 <li
-                    className={getsort_byClass(sort_byOptionValue)}
+                    className={`sort-option ${getsort_byClass(sort_byOptionValue)}`}
                     key={sort_byOptionValue}
                     onClick={() => {
                         handlesort_byChange(sort_byOptionValue)
@@ -66,9 +66,9 @@ export default function SearchBar({ searchParams, setSearchParams }) {
 
     return (
         <>
-            <div className="">
-                <div className={getsort_byClass(sort_by)}>
-                    <ul>{rendersort_byOptions()}</ul>
+            <div className="sorting-links">
+                <div>
+                    <ul >{rendersort_byOptions()}</ul>
                 </div>
                 <form>
                     <div className=''>
